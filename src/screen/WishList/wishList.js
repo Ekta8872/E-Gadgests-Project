@@ -25,12 +25,12 @@ const FavList = () => {
                 {item.price}
                 <s className="strikePrice">{item.actualPrice}</s>
               </p>
-              <button
+              {/* <button
                 className="cartBtn"
                 // onClick={() => dispatch(removeItem(item))}
               >
                 Remove from Cart
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

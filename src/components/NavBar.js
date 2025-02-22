@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import IMAGES from "../theme/Images";
 import { Link, useNavigate } from "react-router-dom";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -24,61 +25,7 @@ const NavBar = () => {
         <img style={Styles.logoImg} src={IMAGES.logoImg} />
         <p style={Styles.navParaLogo}>E-Gadgets</p>
       </div>
-      {/* <div style={Styles.navBarDivPara}>
-        <p
-          // to="/"
-          onClick={() => handleNavigation("Home")}
-          //  style={Styles.navPara}
-          style={{
-            ...Styles.navPara,
-            color: active === "Home" ? "blue" : "white",
-          }}
-        >
-          Home
-        </p>
 
-        <p
-          onClick={() => handleNavigation("Products")}
-          // style={Styles.navPara}
-          style={{
-            ...Styles.navPara,
-            color: active === "Products" ? "yellow" : "white",
-          }}
-        >
-          Products
-        </p>
-        <p
-          onClick={() => handleNavigation("Cart")}
-          //  style={Styles.navPara}
-          style={{
-            ...Styles.navPara,
-            color: active === "Cart" ? "blue" : "white",
-          }}
-        >
-          Cart
-        </p>
-        <p
-          onClick={() => handleNavigation("wishList")}
-          // style={Styles.navPara}
-          style={{
-            ...Styles.navPara,
-            color: active === "wishList" ? "blue" : "white",
-          }}
-        >
-          {" "}
-          WishList{" "}
-        </p>
-        <p
-          onClick={() => handleNavigation("Login")}
-          //  style={Styles.navPara}
-          style={{
-            ...Styles.navPara,
-            color: active === "Login" ? "blue" : "white",
-          }}
-        >
-          Login
-        </p>
-      </div> */}
       <div style={Styles.navBarDivPara}>
         {["Home", "Products", "Cart", "WishList", "Login"].map((name) => (
           <p
@@ -131,8 +78,9 @@ const Styles = {
   // navPara: active::{},
   navParaLogo: {
     color: "white",
-    justifyContent: "flex-start",
-    paddingLeft: "5vmin",
+    justifyContent: "center",
+
+    display: "flex",
     alignItems: "center",
     width: "10vw",
     fontSize: "20px",

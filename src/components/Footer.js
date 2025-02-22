@@ -25,7 +25,7 @@ const Footer = () => {
           <p style={Styles.para}>Buds</p>
         </div>
       </div>
-      <div>
+      <div style={Styles.hrDivTag}>
         <hr style={Styles.hrTag}></hr>
       </div>
       <div style={Styles.footerLast}>
@@ -46,6 +46,11 @@ const Styles = {
     display: "flex",
     gap: "10rem",
     marginTop: "80px",
+    justifyContent: "center",
+    paddingTop: "20px",
+  },
+  hrDivTag: {
+    display: "flex",
     justifyContent: "center",
   },
   headPara: {
@@ -70,8 +75,10 @@ const Styles = {
   footerLast: {
     display: "flex",
     gap: "5rem",
-    marginLeft: "19rem",
-    marginRight: "10rem",
+    paddingTop: "10px",
+    // marginLeft: "19rem",
+    justifyContent: "center",
+    // marginRight: "10rem",
   },
   footerPara: {
     color: "white",

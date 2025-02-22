@@ -6,7 +6,6 @@ import ProductDetails from "../screen/Products";
 
 const Routes = () => {
   return (
-    // <BrowserRouter>
     <Router>
       <div>
         <nav>
@@ -19,7 +18,6 @@ const Routes = () => {
         </Switch>
       </div>
     </Router>
-    // </BrowserRouter>
   );
 };
 

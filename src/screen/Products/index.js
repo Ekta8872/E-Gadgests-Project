@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
 import IMAGES from "../../theme/Images";
 import "./styles.css";
-import { productCheckOutData } from "../../mockData/Home";
+import Checkbox from "@mui/material/Checkbox";
+import { FavoriteBorder, Favorite } from "@mui/icons-material";
 import Footer from "../../components/Footer";
+import { productCheckOutData } from "../../mockData/Home";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../reducer/cartSlice";
 import { addFavorite } from "../../reducer/wishSlice";
 const ProductDetails = () => {
   const dispatch = useDispatch();
-  // const [isFavorite, setIsFavorite] = useState(false); // Initial state for favorite
 
-  // const toggleFavorite = () => {
-  //   setIsFavorite((prev) => !prev); // Toggle the favorite state
-  // };
   return (
     <div>
       <NavBar />
@@ -82,15 +80,13 @@ const ProductDetails = () => {
               <div className="storeimgTextDiv">
                 <div
                   onClick={() => dispatch(addFavorite(item))}
-                  // onClick={toggleFavorite}
                   className="favImgDiv"
                 >
-                  <img
+                  <Checkbox
                     className="favoriteImg"
-                    src={
-                      // isFavorite ? item.circle :
-                      item.favoriteImg
-                    }
+                    icon={<FavoriteBorder />}
+                    // color="warning"
+                    checkedIcon={<Favorite sx={{ color: "red" }} />}
                   />
                 </div>
                 <img className="storeImg" src={item.image} />
@@ -110,7 +106,7 @@ const ProductDetails = () => {
           })}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

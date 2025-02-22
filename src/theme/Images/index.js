@@ -31,6 +31,8 @@ import phoneLifeStyle from "../../assets/Images/phoneLifeStyle.jpg";
 import headphoneLifeStyle from "../../assets/Images/headphoneLifeStyle.jpg";
 import favorite from "../../assets/Images/favorite.png";
 import circle from "../../assets/Images/circle.png";
+import manWatchImg from "../../assets/Images/manWatchImg.jpeg";
+import girlPhoneImg from "../../assets/Images/girlPhoneImg.jpeg";
 const IMAGES = {
   watchHomeImg,
   gadgetsHomeImg,
@@ -65,5 +67,7 @@ const IMAGES = {
   headphoneLifeStyle,
   favorite,
   circle,
+  manWatchImg,
+  girlPhoneImg,
 };
 export default IMAGES;

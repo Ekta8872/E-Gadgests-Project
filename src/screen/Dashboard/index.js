@@ -60,7 +60,10 @@ const DashBoard = () => {
           })}
         </div>
       </div>
-      <Footer />
+      {/* <div className="manGirlDiv">
+        <img className="manGirlImg" src={IMAGES.manWatchImg} />
+        <img className="manGirlImg" src={IMAGES.girlPhoneImg} />
+      </div> */}
     </div>
   );
 };
