@@ -23,7 +23,7 @@ const NavBar = () => {
     <div style={Styles.navBarDiv}>
       <div style={Styles.logoImgDiv}>
         <img style={Styles.logoImg} src={IMAGES.logoImg} />
-        <p style={Styles.navParaLogo}>E-Gadgets</p>
+        <p style={Styles.navParaLogo}>Smart Tech</p>
       </div>
 
       <div style={Styles.navBarDivPara}>
@@ -73,7 +73,6 @@ const Styles = {
     cursor: "pointer",
     paddingRight: "5vmin",
     textDecoration: "none",
-    // justifyContent: "center",
   },
   // navPara: active::{},
   navParaLogo: {

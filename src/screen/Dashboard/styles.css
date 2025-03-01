@@ -1,6 +1,16 @@
 .homeImg{
     width: 100vw;
-    /* height: 70vh; */
+    /* height: 90vh; */
+}
+.carouselDiv{
+    /* height: -300px; */
+}
+
+.tVcarouselDiv{
+    margin-top: 70px;
+}
+.carousel .slide {
+    /* height: 660px; */
 }
 .productHeading{
     justify-content: center;
@@ -13,9 +23,50 @@
 .productImg{
     width: 20vw;
     height: 40vh;
-    /* display: flex;
-    justify-content: center */
+transition: transform .4s;
 
+}
+.productImg:hover{
+    transform: scale(1.08);
+}
+.tribeHeading {
+    color: #1a2024;
+    font-size: 24px;
+    text-align: left;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+
+  
+}
+.categoryShopDataDiv {
+
+    padding: 2rem;
+    justify-content: center;
+    display: flex;
+margin-bottom: 40px;
+}
+.categoryName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding:.2rem;
+    margin-left: 1rem;
+}
+.categoryShopInnerDiv{
+   display: grid;
+   align-items: center;
+    justify-content: center;
+    padding:.1rem;
+}
+.categoryShopImg{
+    transition: transform .2s;
+
+}
+.categoryShopImg:hover{
+    transform: scale(1.3);
 }
 .productDiv{
     display: flex;
@@ -36,21 +87,32 @@
     height: 40vh;
     border-radius: 10px;
     margin-bottom:20px;
+object-fit: cover;
+transition: transform .4s;
+
+}
+.exploreImg:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
 }
 .exploreDiv{
     display: flex;
     justify-content: center;
     gap: 3rem;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 .lifeStyleImg{
     width: 280px;
     height: 450px;
-    /* margin: 30px; */
-    /* border-radius: 10px; */
+  transition: transform .4s;
     border-top-left-radius: 100px;
     border-top-right-radius:100PX;
 
+}
+.lifeStyleImg:hover{
+    transform: scale(1.05);
 }
 .lifeStyleImgDiv{
     display: flex;

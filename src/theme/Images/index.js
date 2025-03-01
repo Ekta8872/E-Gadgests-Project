@@ -33,6 +33,31 @@ import favorite from "../../assets/Images/favorite.png";
 import circle from "../../assets/Images/circle.png";
 import manWatchImg from "../../assets/Images/manWatchImg.jpeg";
 import girlPhoneImg from "../../assets/Images/girlPhoneImg.jpeg";
+//categroryShop
+import categoryWirelessEarbuds from "../../assets/Images/categoryWirelessEarbuds.webp";
+import categoryNeckbands from "../../assets/Images/categoryNeckbands.png";
+import categorySmartwatches from "../../assets/Images/categorySmartwatches.webp";
+import categoryWirelessHeadphones from "../../assets/Images/categoryWirelessHeadphones.webp";
+import categoryWirelessSpeaker from "../../assets/Images/categoryWirelessSpeaker.webp";
+import categoryWiredHeadphones from "../../assets/Images/categoryWiredHeadphones.webp";
+import categoryWiredEarphones from "../../assets/Images/categoryWiredEarphones.webp";
+import categorySoundbars from "../../assets/Images/categorySoundbars.webp";
+import categoryGamingHeadphones from "../../assets/Images/categoryGamingHeadphones.png";
+import categoryPartySpeakers from "../../assets/Images/categoryPartySpeakers.jpg";
+import categoryTrimmers from "../../assets/Images/categoryTrimmers.webp";
+import categoryChargers from "../../assets/Images/categoryChargers.webp";
+import categoryPowerbanks from "../../assets/Images/categoryPowerbanks.webp";
+//tVStoreImg
+import tVFullImg from "../../assets/Images/tVFullImg.webp";
+import tVFullImgSecond from "../../assets/Images/tVFullImgSecond.webp";
+import tVToshiba from "../../assets/Images/tVToshiba.webp";
+import tVFullImgThird from "../../assets/Images/tVFullImgThird.webp";
+//LaptopImg
+import laptopFullImg from "../../assets/Images/laptopFullImg.webp";
+import laptopFullImgSecond from "../../assets/Images/laptopFullImgSecond.webp";
+import laptopFullImgThird from "../../assets/Images/laptopFullImgThird.webp";
+import laptopFullImgFourth from "../../assets/Images/laptopFullImgFourth.webp";
+
 const IMAGES = {
   watchHomeImg,
   gadgetsHomeImg,
@@ -69,5 +94,29 @@ const IMAGES = {
   circle,
   manWatchImg,
   girlPhoneImg,
+  //CATEGORYIMG
+  categoryChargers,
+  categoryGamingHeadphones,
+  categoryNeckbands,
+  categoryPartySpeakers,
+  categoryPowerbanks,
+  categorySmartwatches,
+  categorySoundbars,
+  categoryTrimmers,
+  categoryWiredEarphones,
+  categoryWiredHeadphones,
+  categoryWirelessEarbuds,
+  categoryWirelessHeadphones,
+  categoryWirelessSpeaker,
+  //TvImg
+  tVFullImg,
+  tVFullImgSecond,
+  tVToshiba,
+  tVFullImgThird,
+  //LaptopImg
+  laptopFullImg,
+  laptopFullImgSecond,
+  laptopFullImgThird,
+  laptopFullImgFourth,
 };
 export default IMAGES;

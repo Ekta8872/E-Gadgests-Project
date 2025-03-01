@@ -8,6 +8,8 @@ import ShoppingCart from "./screen/Cart/cart";
 import FavList from "./screen/WishList/wishList";
 import Login from "./screen/Login/login";
 import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import DetailPage from "./screen/DetailPage/detailPage";
 // import ContextProvider from "./context/contextProvider";
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoard />}></Route>
+          <Route path="/product/:productPath" element={<DetailPage />} />
           <Route path="/ProductDetails" element={<ProductDetails />}></Route>
           <Route path="/ShoppingCart" element={<ShoppingCart />}></Route>
           <Route path="/favList" element={<FavList />}></Route>

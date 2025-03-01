@@ -1,87 +1,82 @@
 import React from "react";
+import { Box, Button, Stack, Typography } from "@mui/material";
+import PlaceIcon from "@mui/icons-material/Place";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = () => {
   return (
-    <div style={Styles.container}>
-      <div style={Styles.mainContainer}>
-        <div>
-          <p style={Styles.headPara}>Help</p>
-          <p style={Styles.para}>Account</p>
-          <p style={Styles.para}>Store</p>
-          <p style={Styles.para}>Contact Us</p>
-        </div>
-        <div>
-          <p style={Styles.headPara}>Offers</p>
-          <p style={Styles.para}>Bumper Offer</p>
-          <p style={Styles.para}>Sale</p>
-          <p style={Styles.para}>Last Chance</p>
-        </div>
-        <div>
-          <p style={Styles.headPara}>Products</p>
-          <p style={Styles.para}>Watch</p>
-          <p style={Styles.para}>NeckBands</p>
-          <p style={Styles.para}>Speakers</p>
-          <p style={Styles.para}>Headphones</p>
-          <p style={Styles.para}>Buds</p>
-        </div>
-      </div>
-      <div style={Styles.hrDivTag}>
-        <hr style={Styles.hrTag}></hr>
-      </div>
-      <div style={Styles.footerLast}>
-        <p style={Styles.footerPara}>© 2024, Gadgets Inc.</p>
-        <p style={Styles.footerPara}>Privacy </p>
-        <p style={Styles.footerPara}>Terms </p>
-        <p style={Styles.footerPara}>Security </p>
-        <p style={Styles.footerPara}>Cookie Settings </p>
-      </div>
-    </div>
+    <Box style={Styles.container} sx={{ marginTop: "10rem" }}>
+      <Stack direction="row" sx={{ padding: "5rem" }} spacing={25}>
+        <Box>
+          <Typography variant="h5" sx={{ color: "white", fontWeight: "bold" }}>
+            Get In Touch
+          </Typography>
+          <Stack direction="row" spacing={2} sx={{ width: "23vw", mt: 2 }}>
+            <PlaceIcon sx={{ color: "white" }} />
+            <Typography sx={{ color: "white" }}>
+              Vaishali Marg, Vaishali Nagar, Jaipur , 302021 Rajasthan
+            </Typography>
+          </Stack>
+          <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+            <CallIcon sx={{ color: "white" }} />
+            <Typography sx={{ color: "white" }}> 91+ 7340446336</Typography>
+          </Stack>
+          <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+            <EmailIcon sx={{ color: "white" }} />
+            <Typography sx={{ color: "white" }}>
+              {" "}
+              ektakumari8872@gmail.com
+            </Typography>
+          </Stack>
+        </Box>
+        <Box>
+          <Typography variant="h6" sx={{ color: "white", fontWeight: "bold" }}>
+            Information
+          </Typography>
+          <Stack spacing={2} sx={{ mt: 2 }}>
+            <Typography sx={{ color: "white" }}>My Account</Typography>
+            <Typography sx={{ color: "white" }}>WishList</Typography>
+            <Typography sx={{ color: "white" }}>Cart</Typography>
+            <Typography sx={{ color: "white" }}>SignUp</Typography>
+          </Stack>
+        </Box>
+        <Box sx={{ float: "right" }}>
+          <Typography
+            variant="h6"
+            sx={{ color: "white", fontWeight: "bold", mb: 2 }}
+          >
+            For Any Queries
+          </Typography>
+          <Button
+            variant="outlined"
+            sx={{
+              color: "white",
+              padding: 2,
+              border: "1px solid white",
+              width: "15vw",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Contact Us Now !
+          </Button>
+        </Box>
+      </Stack>
+      <Box sx={{ backgroundColor: "#0f0f0f", mb: 0, p: 2 }}>
+        <Typography sx={{ color: "white", pl: 6 }}>
+          Designed By : Ekta Kumari , Nisha Yadav
+        </Typography>
+      </Box>
+    </Box>
   );
 };
 
 export default Footer;
 
 const Styles = {
-  mainContainer: {
-    display: "flex",
-    gap: "10rem",
-    marginTop: "80px",
-    justifyContent: "center",
-    paddingTop: "20px",
-  },
-  hrDivTag: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  headPara: {
-    color: "white",
-    fontSize: "20px",
-    marginLeft: "8rem",
-    marginRight: "4rem",
-  },
-  para: {
-    color: "white",
-    marginLeft: "8rem",
-    marginRight: "4rem",
-  },
   container: {
     backgroundColor: "black",
-    height: "500px",
-  },
-  hrTag: {
-    width: "80%",
-    marginTop: "8rem",
-  },
-  footerLast: {
-    display: "flex",
-    gap: "5rem",
-    paddingTop: "10px",
-    // marginLeft: "19rem",
-    justifyContent: "center",
-    // marginRight: "10rem",
-  },
-  footerPara: {
-    color: "white",
-    fontSize: "13px",
+    height: "400px",
   },
 };
